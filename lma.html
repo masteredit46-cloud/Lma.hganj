@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luminous Mentors Academy | Hariharganj, Palamu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #123b72;
+            color: white;
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffd54a;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #123b72, #2876c7);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd54a;
+            color: #111;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #123b72;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #123b72;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact */
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            font-size: 17px;
+        }
+
+        .contact-item strong {
+            color: #123b72;
+        }
+
+        /* Footer */
+        footer {
+            background: #0d2d57;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Luminous Mentors Academy</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Luminous Mentors Academy</h1>
+
+            <p>
+                Quality Education • Bright Future • Strong Foundation
+            </p>
+
+            <p>
+                📍 Hariharganj, Palamu
+            </p>
+
+            <br>
+
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Our School</h2>
+
+        <div class="about">
+            <p>
+                Welcome to <strong>Luminous Mentors Academy</strong>,
+                Hariharganj, Palamu. Our aim is to provide quality education
+                and create a positive learning environment where students can
+                learn, grow and build a bright future.
+            </p>
+
+            <br>
+
+            <p>
+                We focus on strong academic foundations, discipline,
+                confidence and overall development of students.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Courses -->
+    <section id="courses">
+        <h2 class="section-title">Our Courses</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Primary Education</h3>
+                <p>
+                    Strong foundation and enjoyable learning for young students.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>Secondary Education</h3>
+                <p>
+                    Focused academic learning and preparation for higher studies.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Exam Preparation</h3>
+                <p>
+                    Proper guidance and practice to help students perform better.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Facilities -->
+    <section id="facilities">
+        <h2 class="section-title">Our Facilities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🏫</div>
+                <h3>Smart Learning</h3>
+                <p>Modern and student-friendly learning environment.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👨‍🏫</div>
+                <h3>Experienced Mentors</h3>
+                <p>Guidance focused on students' academic development.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Overall Development</h3>
+                <p>Focus on confidence, discipline and personality development.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+                <strong>🏫 School:</strong>
+                Luminous Mentors Academy
+            </div>
+
+            <div class="contact-item">
+                <strong>📍 Address:</strong>
+                Hariharganj, Palamu
+            </div>
+
+            <div class="contact-item">
+                <strong>📞 Mobile:</strong>
+                <a href="tel:9279397624">9279397624</a>
+            </div>
+
+            <br>
+
+            <a class="btn" href="tel:9279397624">
+                Call Now
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Luminous Mentors Academy</strong></p>
+        <p>Hariharganj, Palamu</p>
+        <p>© 2026 Luminous Mentors Academy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- Admission Enquiry -->
+<section id="admission">
+    <h2 class="section-title">Admission Enquiry</h2>
+
+    <div class="admission-form">
+
+        <form onsubmit="submitEnquiry(event)">
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="studentName"
+                       placeholder="Enter student's name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Parent / Guardian Name</label>
+                <input type="text" id="parentName"
+                       placeholder="Enter parent/guardian name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="tel" id="mobile"
+                       placeholder="Enter mobile number"
+                       pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select Class</label>
+
+                <select id="className" required>
+                    <option value="">Select Class</option>
+                    <option>Nursery</option>
+                    <option>LKG</option>
+                    <option>UKG</option>
+                    <option>Class 1</option>
+                    <option>Class 2</option>
+                    <option>Class 3</option>
+                    <option>Class 4</option>
+                    <option>Class 5</option>
+                    <option>Class 6</option>
+                    <option>Class 7</option>
+                    <option>Class 8</option>
+                    <option>Class 9</option>
+                    <option>Class 10</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message"
+                          placeholder="Enter your enquiry"
+                          rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Submit Enquiry
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<style>
+.admission-form {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #123b72;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #123b72;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #123b72;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0d2d57;
+}
+</style>
+
+<script>
+function submitEnquiry(event) {
+
+    event.preventDefault();
+
+    let student = document.getElementById("studentName").value;
+    let parent = document.getElementById("parentName").value;
+    let mobile = document.getElementById("mobile").value;
+    let className = document.getElementById("className").value;
+    let message = document.getElementById("message").value;
+
+    let whatsappMessage =
+        "Admission Enquiry - Luminous Mentors Academy%0A%0A" +
+        "Student Name: " + student + "%0A" +
+        "Parent/Guardian: " + parent + "%0A" +
+        "Mobile: " + mobile + "%0A" +
+        "Class: " + className + "%0A" +
+        "Message: " + message;
+
+    window.open(
+        "https://wa.me/919279397624?text=" + whatsappMessage,
+        "_blank"
+    );
+}
+</script>
